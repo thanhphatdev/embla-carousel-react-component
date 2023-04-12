@@ -1,16 +1,19 @@
 {
-  "name": "embla-carousel-react-component",
-  "version": "0.5.2",
+  "name": "@thanhphatdev/embla-carousel-react-component",
+  "version": "0.5.3",
   "author": "Xuan Hung <vu.xuanhung1509@gmail.com>",
   "description": "A lightweight carousel library for React, based on Embla Carousel",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuanhung1509/embla-carousel-react-component"
+    "url": "git+https://github.com/thanhphatdev/embla-carousel-react-component"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/thanhphatdev"
   },
   "bugs": {
-    "url": "https://github.com/xuanhung1509/embla-carousel-react-component/issues"
+    "url": "https://github.com/thanhphatdev/embla-carousel-react-component/issues"
   },
-  "homepage": "https://github.com/xuanhung1509/embla-carousel-react-component/blob/master/packages/embla-carousel-react-component/README.md",
+  "homepage": "https://github.com/thanhphatdev/embla-carousel-react-component/blob/master/packages/embla-carousel-react-component/README.md",
   "license": "MIT",
   "keywords": [
     "slider",
@@ -19,28 +22,12 @@
     "carousel",
     "react"
   ],
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepublishOnly": "yarn build",
     "prepack": "json -I -f package.json -e \"delete this.dependencies; delete this.devDependencies\""
-  },
-  "dependencies": {
-    "embla-carousel-react": "^7.0.5"
-  },
-  "devDependencies": {
-    "@types/node": "^18.14.3",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react-swc": "^3.0.1",
-    "eslint-config-custom": "*",
-    "json": "^11.0.0",
-    "tsconfig": "*",
-    "typescript": "^4.9.3",
-    "vite": "^4.0.4",
-    "vite-plugin-dts": "^2.0.2"
   },
   "peerDependencies": {
     "react": "^16.8.0. || ^17.0.1 || ^18.0.0"
